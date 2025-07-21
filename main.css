@@ -26,3 +26,18 @@ h4 {
     font-size: 125%;
     font-family: 'Bodoni Moda', serif;
 }
+
+#typewriter {
+  font-family: 'Lexend', monospace;
+  font-size: 120%;
+  display: inline-block;
+  border-right: 2px solid #181818;
+  white-space: pre;
+  overflow: hidden;
+  animation: blink-cursor 0.8s steps(1) infinite;
+}
+
+@keyframes blink-cursor {
+  0%, 100% { border-color: #181818; }
+  50% { border-color: transparent; }
+}
