@@ -24,11 +24,11 @@ h1, h2, h3 {
 
 h4 {
     font-size: 125%;
-    font-family: monospace;
+    font-family: 'Bodoni Moda', serif;
 }
 
 #typewriter {
-  font-family: 'Lexend', monospace;
+  font-family: monospace;
   font-size: 120%;
   display: inline-block;
   border-right: 2px solid #1f1f1f;
