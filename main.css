@@ -30,9 +30,13 @@ h4 {
 #cmds {
   font-family: 'Ubuntu Mono', monospace;
   font-size: 120%;
-  display: inline-block;
-  border: 2.5px solid #d1d5db;
-  border-radius: 0.875em;
+  border: none;
+  border-radius: 0;
+  background: none;
+  box-shadow: none;
+  display: block;
+  padding: 0;
+  margin: 0;
 }
 
 #cmds dt {
