@@ -1,20 +1,20 @@
 const commands = [
-  "weather",
-  "ping",
-  "Hello",
-  "help",
-  "random-int",
-  "reverse",
-  "calc",
-  "cal",
-  "date",
-  "cli-stats",
-  "echo hello world",
-  "but-better",
-  "support"
+  " weather",
+  " ping",
+  " Hello",
+  " help",
+  " random-int",
+  " reverse",
+  " calc",
+  " cal",
+  " date",
+  " cli-stats",
+  " echo hello world",
+  " but-better",
+  " support"
 ];
 
-const staticPart = "simple ";
+const staticPart = "simple";
 const typewriter = document.getElementById('typewriter');
 let cmdIndex = 0;
 let charIndex = 0;
