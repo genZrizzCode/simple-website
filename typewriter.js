@@ -1,19 +1,20 @@
 const commands = [
-  "simple weather",
-  "simple ping",
-  "simple Hello",
-  "simple help",
-  "simple random-int",
-  "simple reverse",
-  "simple calc",
-  "simple cal",
-  "simple date",
-  "simple cli-stats",
-  "simple echo hello world",
-  "simple but-better",
-  "simple support"
+  "weather",
+  "ping",
+  "Hello",
+  "help",
+  "random-int",
+  "reverse",
+  "calc",
+  "cal",
+  "date",
+  "cli-stats",
+  "echo hello world",
+  "but-better",
+  "support"
 ];
 
+const staticPart = "simple ";
 const typewriter = document.getElementById('typewriter');
 let cmdIndex = 0;
 let charIndex = 0;
@@ -23,15 +24,17 @@ function typeLoop() {
   const current = commands[cmdIndex];
   if (typing) {
     if (charIndex < current.length) {
-      typewriter.textContent += current[charIndex++];
+      typewriter.textContent = staticPart + current.substring(0, charIndex + 1);
+      charIndex++;
       setTimeout(typeLoop, 80);
     } else {
       typing = false;
-      setTimeout(typeLoop, 3200); // Pause before deleting (now 2s longer)
+      setTimeout(typeLoop, 3200); // Pause before deleting
     }
   } else {
     if (charIndex > 0) {
-      typewriter.textContent = current.substring(0, --charIndex);
+      charIndex--;
+      typewriter.textContent = staticPart + current.substring(0, charIndex);
       setTimeout(typeLoop, 40);
     } else {
       typing = true;
