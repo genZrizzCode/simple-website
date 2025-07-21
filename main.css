@@ -48,14 +48,6 @@ h4 {
   margin-bottom: 1em;
 }
 
-@media (prefers-color-scheme: dark) {
-  #cmds {
-    border: 2.5px solid #333a41;
-    background: #23272e;
-    box-shadow: inset 0 2px 8px 0 rgba(0,0,0,0.30), inset 0 -2px 8px 0 rgba(0,0,0,0.22);
-  }
-}
-
 #typewriter {
   position: relative;
   font-family: 'Ubuntu Mono', monospace;
