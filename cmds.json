@@ -1,8 +1,8 @@
 {
     "weather <location>": "Get the weather for a location (defaults to Los Angeles)",
     "ping <website>": "Ping a server (defaults to simplisticli.pages.dev)",
-    "Hello": "Say hello",
-    "help": "Show this help message",
+    "Hello": "Says hello",
+    "help": "Gives a list of commands",
     "random-int <min> <max>": "Generate a random integer (defaults to 1-100)",
     "reverse <string>": "Reverse a string",
     "calc <expression>": "Calculate a math problem",
