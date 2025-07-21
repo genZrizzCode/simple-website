@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;700&family=Lexend+Zetta:wght@400;700&family=Bodoni+Moda:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;700&family=Lexend+Zetta:wght@400;700&family=Bodoni+Moda:wght@400;700&family=Ubuntu+Mono:wght@400;700&display=swap');
 
 html {
     background-color: #f0f4f9;
@@ -27,9 +27,34 @@ h4 {
     font-family: 'Bodoni Moda', serif;
 }
 
+#cmds {
+  font-family: 'Ubuntu Mono', monospace;
+  font-size: 120%;
+  display: inline-block;
+  border: 2.5px solid #d1d5db;
+  border-radius: 0.875em;
+}
+
+#cmds dt {
+  font-weight: bold;
+  font-family: 'Ubuntu Mono', monospace;
+}
+
+#cmds dd {
+  margin-bottom: 1em;
+}
+
+@media (prefers-color-scheme: dark) {
+  #cmds {
+    border: 2.5px solid #333a41;
+    background: #23272e;
+    box-shadow: inset 0 2px 8px 0 rgba(0,0,0,0.30), inset 0 -2px 8px 0 rgba(0,0,0,0.22);
+  }
+}
+
 #typewriter {
   position: relative;
-  font-family: monospace;
+  font-family: 'Ubuntu Mono', monospace;
   font-size: 120%;
   display: inline-block;
   border: 2.5px solid #d1d5db;
