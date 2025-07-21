@@ -28,6 +28,7 @@ h4 {
 }
 
 #typewriter {
+  position: relative;
   font-family: monospace;
   font-size: 120%;
   display: inline-block;
@@ -39,14 +40,19 @@ h4 {
   margin-top: 1.5em;
   white-space: pre;
   overflow: hidden;
-  /* Cursor: set after border so it overrides only the right side */
-  border-right: 2px solid #1f1f1f;
-  animation: blink-cursor 0.8s steps(1) infinite;
 }
 
-@keyframes blink-cursor {
-  0%, 100% { border-right-color: #1f1f1f; }
-  50% { border-right-color: transparent; }
+#typewriter::after {
+  content: "";
+  display: inline-block;
+  width: 2px;
+  height: 1em;
+  background: #1f1f1f;
+  position: absolute;
+  right: 1.2em; /* Adjust as needed to align with text */
+  top: 50%;
+  transform: translateY(-50%);
+  animation: blink-cursor 0.8s steps(1) infinite;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -54,12 +60,18 @@ h4 {
     border: 2.5px solid #333a41;
     background: #23272e;
     box-shadow: inset 0 2px 8px 0 rgba(0,0,0,0.30), inset 0 -2px 8px 0 rgba(0,0,0,0.22);
-    border-right: 2px solid #f5f5f5;
+  }
+  #typewriter::after {
+    background: #f5f5f5;
     animation: blink-cursor-dark 0.8s steps(1) infinite;
   }
 }
 
+@keyframes blink-cursor {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
 @keyframes blink-cursor-dark {
-  0%, 100% { border-right-color: #f5f5f5; }
-  50% { border-right-color: transparent; }
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
 }
