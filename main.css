@@ -24,20 +24,32 @@ h1, h2, h3 {
 
 h4 {
     font-size: 125%;
-    font-family: 'Bodoni Moda', serif;
+    font-family: monospace;
 }
 
 #typewriter {
   font-family: 'Lexend', monospace;
   font-size: 120%;
   display: inline-block;
-  border-right: 2px solid #181818;
+  border-right: 2px solid #1f1f1f;
   white-space: pre;
   overflow: hidden;
   animation: blink-cursor 0.8s steps(1) infinite;
 }
 
 @keyframes blink-cursor {
-  0%, 100% { border-color: #181818; }
+  0%, 100% { border-color: #1f1f1f; }
+  50% { border-color: transparent; }
+}
+
+@media (prefers-color-scheme: dark) {
+  #typewriter {
+    border-right: 2px solid #f5f5f5;
+    animation: blink-cursor-dark 0.8s steps(1) infinite;
+  }
+}
+
+@keyframes blink-cursor-dark {
+  0%, 100% { border-color: #f5f5f5; }
   50% { border-color: transparent; }
 }
