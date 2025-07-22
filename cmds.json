@@ -1,15 +1,15 @@
 {
-    "weather <location>": "Get the weather for a location (defaults to Los Angeles)",
-    "ping <website>": "Ping a server (defaults to simplisticli.pages.dev)",
+    "weather <location>": "Gets the weather for a location (defaults to Los Angeles)",
+    "ping <website>": "Pings a server (defaults to simplisticli.pages.dev)",
     "Hello": "Says hello",
     "help": "Gives a list of commands",
-    "random-int <min> <max>": "Generate a random integer (defaults to 1-100)",
-    "reverse <string>": "Reverse a string",
-    "calc <expression>": "Calculate a math problem",
-    "cal": "Show the calendar",
-    "date": "Show the current date",
-    "cli-stats": "Show CLI stats",
-    "echo <message>": "Echo a message",
-    "but-better": "Show a but better message",
-    "support": "Show support information"
+    "random-int <min> <max>": "Generates a random integer (defaults to 1-100)",
+    "reverse <string>": "Reverses a string",
+    "calc <expression>": "Calculates a math problem",
+    "cal": "Shows the calendar",
+    "date": "Shows the current date",
+    "cli-stats": "Shows CLI stats",
+    "echo <message>": "Echoes a message",
+    "but-better": "Shows support information",
+    "support": "Shows support information"
 }
