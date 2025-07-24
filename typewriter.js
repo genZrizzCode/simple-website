@@ -15,16 +15,14 @@ const commands = [
 ];
 
 const staticPart = "simple";
-const typewriter = document.getElementById('typewriter');
+const typewriterText = document.getElementById('typewriter-text');
 let cmdIndex = 0;
 let charIndex = 0;
 let typing = true;
 
 function typeLoop() {
   const current = commands[cmdIndex];
-  let text = staticPart + current.substring(0, charIndex);
-  // Always add the blinking cursor span at the end
-  typewriter.innerHTML = text + '<span class="cursor"></span>';
+  typewriterText.textContent = staticPart + current.substring(0, charIndex);
 
   if (typing) {
     if (charIndex < current.length) {
