@@ -22,9 +22,12 @@ let typing = true;
 
 function typeLoop() {
   const current = commands[cmdIndex];
+  let text = staticPart + current.substring(0, charIndex);
+  // Always add the blinking cursor span at the end
+  typewriter.innerHTML = text + '<span class="cursor"></span>';
+
   if (typing) {
     if (charIndex < current.length) {
-      typewriter.textContent = staticPart + current.substring(0, charIndex + 1);
       charIndex++;
       setTimeout(typeLoop, 80);
     } else {
@@ -34,7 +37,6 @@ function typeLoop() {
   } else {
     if (charIndex > 0) {
       charIndex--;
-      typewriter.textContent = staticPart + current.substring(0, charIndex);
       setTimeout(typeLoop, 40);
     } else {
       typing = true;
