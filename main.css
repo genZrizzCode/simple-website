@@ -110,3 +110,33 @@ h4 {
   0%, 100% { opacity: 1; }
   50% { opacity: 0; }
 }
+
+/* Mobile responsive styles for phones in vertical orientation */
+@media (max-width: 600px) {
+  h1, h2, h3 {
+    font-size: 180%;
+  }
+  
+  h4 {
+    font-size: 100%;
+  }
+  
+  .toggle-box {
+    padding: 0.3em 0.8em;
+    margin: 0.5em;
+  }
+  
+  #typewriter {
+    font-size: 100%;
+    padding: 0.3em 0.8em;
+    margin-top: 0.3em;
+  }
+  
+  #cmds {
+    font-size: 100%;
+  }
+  
+  .center {
+    padding: 0 0.5em;
+  }
+}
